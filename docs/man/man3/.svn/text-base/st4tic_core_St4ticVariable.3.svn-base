@@ -1,0 +1,74 @@
+.TH "st4tic::core::St4ticVariable" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::core::St4ticVariable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::core::St4ticObject\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBgetVariableName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetVariableName\fP (String variableName)"
+.br
+.ti -1c
+.RI "\fBSt4ticValue\fP \fBgetVariableValue\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetVariableValue\fP (\fBSt4ticValue\fP variableValue)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class base for \fBSt4tic\fP language variables
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrabi Abderrahim 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "String st4tic.core.St4ticVariable.getVariableName ()"Get a variable name 
+.PP
+\fBReturns:\fP
+.RS 4
+String 
+.RE
+.PP
+
+.SS "\fBSt4ticValue\fP st4tic.core.St4ticVariable.getVariableValue ()"Get a variable value 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSt4ticValue\fP 
+.RE
+.PP
+
+.SS "void st4tic.core.St4ticVariable.setVariableName (String variableName)"Set a name for variable 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvariableName\fP 
+.RE
+.PP
+
+.SS "void st4tic.core.St4ticVariable.setVariableValue (\fBSt4ticValue\fP variableValue)"Set a value to variable 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvariableValue\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

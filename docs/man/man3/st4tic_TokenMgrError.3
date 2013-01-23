@@ -1,0 +1,85 @@
+.TH "st4tic::TokenMgrError" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::TokenMgrError \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBgetMessage\fP ()"
+.br
+.ti -1c
+.RI "\fBTokenMgrError\fP ()"
+.br
+.ti -1c
+.RI "\fBTokenMgrError\fP (String message, int reason)"
+.br
+.ti -1c
+.RI "\fBTokenMgrError\fP (boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar, int reason)"
+.br
+.in -1c
+.SS "Static Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static final String \fBaddEscapes\fP (String str)"
+.br
+.ti -1c
+.RI "static String \fBLexicalError\fP (boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar)"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBerrorCode\fP"
+.br
+.in -1c
+.SS "Static Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final int \fBLEXICAL_ERROR\fP = 0"
+.br
+.ti -1c
+.RI "static final int \fBSTATIC_LEXER_ERROR\fP = 1"
+.br
+.ti -1c
+.RI "static final int \fBINVALID_LEXICAL_STATE\fP = 2"
+.br
+.ti -1c
+.RI "static final int \fBLOOP_DETECTED\fP = 3"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBToken\fP Manager Error. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.TokenMgrError.TokenMgrError ()"No arg constructor. 
+.SS "st4tic.TokenMgrError.TokenMgrError (String message, int reason)"Constructor with message and reason. 
+.SS "st4tic.TokenMgrError.TokenMgrError (boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar, int reason)"Full Constructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static final String st4tic.TokenMgrError.addEscapes (String str)\fC [static, protected]\fP"Replaces unprintable characters by their escaped (or unicode escaped) equivalents in the given string 
+.SS "String st4tic.TokenMgrError.getMessage ()"You can also modify the body of this method to customize your error messages. For example, cases like LOOP_DETECTED and INVALID_LEXICAL_STATE are not of end-users concern, so you can return something like :
+.PP
+'Internal Error : Please file a bug report .... '
+.PP
+from this method for such cases in the release version of your parser. 
+.SS "static String st4tic.TokenMgrError.LexicalError (boolean EOFSeen, int lexState, int errorLine, int errorColumn, String errorAfter, char curChar)\fC [static, protected]\fP"Returns a detailed message for the Error when it is thrown by the token manager to indicate a lexical error. Parameters : EOFSeen : indicates if EOF caused the lexical error curLexState : lexical state in which this error occurred errorLine : line number when the error occurred errorColumn : column number when the error occurred errorAfter : prefix that was seen before this error occurred curchar : the offending character Note: You can customize the lexical error message by modifying this method. 
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBst4tic.TokenMgrError.errorCode\fP\fC [package]\fP"Indicates the reason why the exception is thrown. It will have one of the above 4 values. 
+.SS "final int \fBst4tic.TokenMgrError.INVALID_LEXICAL_STATE\fP = 2\fC [static, package]\fP"Tried to change to an invalid lexical state. 
+.SS "final int \fBst4tic.TokenMgrError.LEXICAL_ERROR\fP = 0\fC [static, package]\fP"Lexical error occurred. 
+.SS "final int \fBst4tic.TokenMgrError.LOOP_DETECTED\fP = 3\fC [static, package]\fP"Detected (and bailed out of) an infinite loop in the token manager. 
+.SS "final int \fBst4tic.TokenMgrError.STATIC_LEXER_ERROR\fP = 1\fC [static, package]\fP"An attempt was made to create a second instance of a static token manager. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

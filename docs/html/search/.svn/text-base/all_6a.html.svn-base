@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_javastaticmethods">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../classst4tic_1_1syntaxtree_1_1_java_static_methods.html" target="_parent">JavaStaticMethods</a>
+  <span class="SRScope">st4tic::syntaxtree</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_javastaticmethods">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_javastaticmethods')">JavaStaticMethods</a>
+  <div class="SRChildren">
+    <a id="Item1_c0" onkeydown="return searchResults.NavChild(event,1,0)" onkeypress="return searchResults.NavChild(event,1,0)" onkeyup="return searchResults.NavChild(event,1,0)" class="SRScope" href="../classst4tic_1_1_st4tic.html#a07e261cce2bc07bd63f03a9a6a834a30" target="_parent">st4tic::St4tic.JavaStaticMethods()</a>
+    <a id="Item1_c1" onkeydown="return searchResults.NavChild(event,1,1)" onkeypress="return searchResults.NavChild(event,1,1)" onkeyup="return searchResults.NavChild(event,1,1)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_java_static_methods.html#a6f9c60db63d7d10565aa0df6830e4c8b" target="_parent">st4tic::syntaxtree::JavaStaticMethods.JavaStaticMethods(NodeToken n0, NodeList n1, NodeToken n2, MathExpression n3, NodeListOptional n4, NodeToken n5, NodeToken n6)</a>
+    <a id="Item1_c2" onkeydown="return searchResults.NavChild(event,1,2)" onkeypress="return searchResults.NavChild(event,1,2)" onkeyup="return searchResults.NavChild(event,1,2)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_java_static_methods.html#ae01e24778697e958c52b660fc0d80931" target="_parent">st4tic::syntaxtree::JavaStaticMethods.JavaStaticMethods(NodeToken n0, NodeList n1, MathExpression n2, NodeListOptional n3)</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_javastaticmethods_2ejava">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../_java_static_methods_8java.html" target="_parent">JavaStaticMethods.java</a>
+ </div>
+</div>
+<div class="SRResult" id="SR_jj_5finput_5fstream">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../classst4tic_1_1_st4tic.html#a4687732010dfe7773ecbe8daee4f8f66" target="_parent">jj_input_stream</a>
+  <span class="SRScope">st4tic::St4tic</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jj_5fnt">
+ <div class="SREntry">
+  <a id="Item4" onkeydown="return searchResults.Nav(event,4)" onkeypress="return searchResults.Nav(event,4)" onkeyup="return searchResults.Nav(event,4)" class="SRSymbol" href="../classst4tic_1_1_st4tic.html#a28bd4908643152addf90a2c9084d0503" target="_parent">jj_nt</a>
+  <span class="SRScope">st4tic::St4tic</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjbitvec0">
+ <div class="SREntry">
+  <a id="Item5" onkeydown="return searchResults.Nav(event,5)" onkeypress="return searchResults.Nav(event,5)" onkeyup="return searchResults.Nav(event,5)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a03fc88a42215f484afeaa86f9524de0b" target="_parent">jjbitVec0</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjfilltoken">
+ <div class="SREntry">
+  <a id="Item6" onkeydown="return searchResults.Nav(event,6)" onkeypress="return searchResults.Nav(event,6)" onkeyup="return searchResults.Nav(event,6)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a8b5fa5adfe94cc9b996cf855eed5af42" target="_parent">jjFillToken</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjmatchedkind">
+ <div class="SREntry">
+  <a id="Item7" onkeydown="return searchResults.Nav(event,7)" onkeypress="return searchResults.Nav(event,7)" onkeyup="return searchResults.Nav(event,7)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#ae3c624e1537cb3cad9d0788dca68b92a" target="_parent">jjmatchedKind</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjmatchedpos">
+ <div class="SREntry">
+  <a id="Item8" onkeydown="return searchResults.Nav(event,8)" onkeypress="return searchResults.Nav(event,8)" onkeyup="return searchResults.Nav(event,8)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a9584367df1d92f07165ebc6d6d69de62" target="_parent">jjmatchedPos</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjnewstatecnt">
+ <div class="SREntry">
+  <a id="Item9" onkeydown="return searchResults.Nav(event,9)" onkeypress="return searchResults.Nav(event,9)" onkeyup="return searchResults.Nav(event,9)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a8e447c51a86968fc3b56c4b243ee9960" target="_parent">jjnewStateCnt</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjnextstates">
+ <div class="SREntry">
+  <a id="Item10" onkeydown="return searchResults.Nav(event,10)" onkeypress="return searchResults.Nav(event,10)" onkeyup="return searchResults.Nav(event,10)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#aba0631e54f6e259c9f68fd1668567004" target="_parent">jjnextStates</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjround">
+ <div class="SREntry">
+  <a id="Item11" onkeydown="return searchResults.Nav(event,11)" onkeypress="return searchResults.Nav(event,11)" onkeyup="return searchResults.Nav(event,11)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a9a8e93dc767e369cfe698d7be3204051" target="_parent">jjround</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjstrliteralimages">
+ <div class="SREntry">
+  <a id="Item12" onkeydown="return searchResults.Nav(event,12)" onkeypress="return searchResults.Nav(event,12)" onkeyup="return searchResults.Nav(event,12)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#aed32a53b668787a766bee8edb606eab0" target="_parent">jjstrLiteralImages</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjtoskip">
+ <div class="SREntry">
+  <a id="Item13" onkeydown="return searchResults.Nav(event,13)" onkeypress="return searchResults.Nav(event,13)" onkeyup="return searchResults.Nav(event,13)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a530351bf47409871d3068d94a9179c0d" target="_parent">jjtoSkip</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jjtotoken">
+ <div class="SREntry">
+  <a id="Item14" onkeydown="return searchResults.Nav(event,14)" onkeypress="return searchResults.Nav(event,14)" onkeyup="return searchResults.Nav(event,14)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a2b7bf8b23fa3ca1b3396167cac37501b" target="_parent">jjtoToken</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_jtbtoolkit">
+ <div class="SREntry">
+  <a id="Item15" onkeydown="return searchResults.Nav(event,15)" onkeypress="return searchResults.Nav(event,15)" onkeyup="return searchResults.Nav(event,15)" class="SRSymbol" href="../classst4tic_1_1_j_t_b_toolkit.html" target="_parent">JTBToolkit</a>
+  <span class="SRScope">st4tic</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

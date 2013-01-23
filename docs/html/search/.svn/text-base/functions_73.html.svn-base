@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_setdebugstream">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a382638eed55123c06fcd23c4dde5ae9c" target="_parent">setDebugStream</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_settabsize">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="../classst4tic_1_1_simple_char_stream.html#a21b7222b7f2eb1366139462440aace3d" target="_parent">setTabSize</a>
+  <span class="SRScope">st4tic::SimpleCharStream</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_settype">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../classst4tic_1_1core_1_1_st4tic_value.html#a695732628f3c36c882a86d0a1bb653cb" target="_parent">setType</a>
+  <span class="SRScope">st4tic::core::St4ticValue</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_setvalue">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../classst4tic_1_1core_1_1_st4tic_value.html#aefacfcacf29e6e1be450ede7bb952af7" target="_parent">setValue</a>
+  <span class="SRScope">st4tic::core::St4ticValue</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_setvariablename">
+ <div class="SREntry">
+  <a id="Item4" onkeydown="return searchResults.Nav(event,4)" onkeypress="return searchResults.Nav(event,4)" onkeyup="return searchResults.Nav(event,4)" class="SRSymbol" href="../classst4tic_1_1core_1_1_st4tic_variable.html#a3c2eee203edf17a0f35aff5e83a651e4" target="_parent">setVariableName</a>
+  <span class="SRScope">st4tic::core::St4ticVariable</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_setvariablevalue">
+ <div class="SREntry">
+  <a id="Item5" onkeydown="return searchResults.Nav(event,5)" onkeypress="return searchResults.Nav(event,5)" onkeyup="return searchResults.Nav(event,5)" class="SRSymbol" href="../classst4tic_1_1core_1_1_st4tic_variable.html#a3747ebced656229b0151d57a60427835" target="_parent">setVariableValue</a>
+  <span class="SRScope">st4tic::core::St4ticVariable</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_simplecharstream">
+ <div class="SREntry">
+  <a id="Item6" onkeydown="return searchResults.Nav(event,6)" onkeypress="return searchResults.Nav(event,6)" onkeyup="return searchResults.Nav(event,6)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_simplecharstream')">SimpleCharStream</a>
+  <div class="SRChildren">
+    <a id="Item6_c0" onkeydown="return searchResults.NavChild(event,6,0)" onkeypress="return searchResults.NavChild(event,6,0)" onkeyup="return searchResults.NavChild(event,6,0)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#af116f73e9be21d39968121bbebd633e5" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.Reader dstream, int startline, int startcolumn, int buffersize)</a>
+    <a id="Item6_c1" onkeydown="return searchResults.NavChild(event,6,1)" onkeypress="return searchResults.NavChild(event,6,1)" onkeyup="return searchResults.NavChild(event,6,1)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#a5d88f216d3b6ba7b6e8191a2e1090bae" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.Reader dstream, int startline, int startcolumn)</a>
+    <a id="Item6_c2" onkeydown="return searchResults.NavChild(event,6,2)" onkeypress="return searchResults.NavChild(event,6,2)" onkeyup="return searchResults.NavChild(event,6,2)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#af50c1cfb322bf2b862684c724478b8fb" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.Reader dstream)</a>
+    <a id="Item6_c3" onkeydown="return searchResults.NavChild(event,6,3)" onkeypress="return searchResults.NavChild(event,6,3)" onkeyup="return searchResults.NavChild(event,6,3)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#a30440bc6962fad38c3b68048b0e1a706" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize)</a>
+    <a id="Item6_c4" onkeydown="return searchResults.NavChild(event,6,4)" onkeypress="return searchResults.NavChild(event,6,4)" onkeyup="return searchResults.NavChild(event,6,4)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#a3b49d51ade3b59dd690475537d8a900a" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.InputStream dstream, int startline, int startcolumn, int buffersize)</a>
+    <a id="Item6_c5" onkeydown="return searchResults.NavChild(event,6,5)" onkeypress="return searchResults.NavChild(event,6,5)" onkeyup="return searchResults.NavChild(event,6,5)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#a58f04f91ad50de69f01a1c25821a5037" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.InputStream dstream, String encoding, int startline, int startcolumn)</a>
+    <a id="Item6_c6" onkeydown="return searchResults.NavChild(event,6,6)" onkeypress="return searchResults.NavChild(event,6,6)" onkeyup="return searchResults.NavChild(event,6,6)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#ae477d93af0bb27a9b3ec9818a939ba8f" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.InputStream dstream, int startline, int startcolumn)</a>
+    <a id="Item6_c7" onkeydown="return searchResults.NavChild(event,6,7)" onkeypress="return searchResults.NavChild(event,6,7)" onkeyup="return searchResults.NavChild(event,6,7)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#a654b079e6e03b3a01ffc14e16018b818" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.InputStream dstream, String encoding)</a>
+    <a id="Item6_c8" onkeydown="return searchResults.NavChild(event,6,8)" onkeypress="return searchResults.NavChild(event,6,8)" onkeyup="return searchResults.NavChild(event,6,8)" class="SRScope" href="../classst4tic_1_1_simple_char_stream.html#aef5efd7e1c3ee570137d813692a58c40" target="_parent">st4tic::SimpleCharStream.SimpleCharStream(java.io.InputStream dstream)</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_size">
+ <div class="SREntry">
+  <a id="Item7" onkeydown="return searchResults.Nav(event,7)" onkeypress="return searchResults.Nav(event,7)" onkeyup="return searchResults.Nav(event,7)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_size')">size</a>
+  <div class="SRChildren">
+    <a id="Item7_c0" onkeydown="return searchResults.NavChild(event,7,0)" onkeypress="return searchResults.NavChild(event,7,0)" onkeyup="return searchResults.NavChild(event,7,0)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_node_list.html#abc3b17092411d110337afd2640cff393" target="_parent">st4tic::syntaxtree::NodeList.size()</a>
+    <a id="Item7_c1" onkeydown="return searchResults.NavChild(event,7,1)" onkeypress="return searchResults.NavChild(event,7,1)" onkeyup="return searchResults.NavChild(event,7,1)" class="SRScope" href="../interfacest4tic_1_1syntaxtree_1_1_node_list_interface.html#af5605dfb829d81eac4fb62e285db597f" target="_parent">st4tic::syntaxtree::NodeListInterface.size()</a>
+    <a id="Item7_c2" onkeydown="return searchResults.NavChild(event,7,2)" onkeypress="return searchResults.NavChild(event,7,2)" onkeyup="return searchResults.NavChild(event,7,2)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_node_list_optional.html#a7e4d6730a48ef5685788c4b8139ce1d7" target="_parent">st4tic::syntaxtree::NodeListOptional.size()</a>
+    <a id="Item7_c3" onkeydown="return searchResults.NavChild(event,7,3)" onkeypress="return searchResults.NavChild(event,7,3)" onkeyup="return searchResults.NavChild(event,7,3)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_node_sequence.html#ac42102f272bb736d65529954c944467b" target="_parent">st4tic::syntaxtree::NodeSequence.size()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_st4tic">
+ <div class="SREntry">
+  <a id="Item8" onkeydown="return searchResults.Nav(event,8)" onkeypress="return searchResults.Nav(event,8)" onkeyup="return searchResults.Nav(event,8)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_st4tic')">St4tic</a>
+  <div class="SRChildren">
+    <a id="Item8_c0" onkeydown="return searchResults.NavChild(event,8,0)" onkeypress="return searchResults.NavChild(event,8,0)" onkeyup="return searchResults.NavChild(event,8,0)" class="SRScope" href="../classst4tic_1_1_st4tic.html#ad759be58974d0d6ece453bdb623239a8" target="_parent">st4tic::St4tic.St4tic(java.io.InputStream stream)</a>
+    <a id="Item8_c1" onkeydown="return searchResults.NavChild(event,8,1)" onkeypress="return searchResults.NavChild(event,8,1)" onkeyup="return searchResults.NavChild(event,8,1)" class="SRScope" href="../classst4tic_1_1_st4tic.html#a283986d60edc9bcbcdc19ebcb1244ba5" target="_parent">st4tic::St4tic.St4tic(java.io.InputStream stream, String encoding)</a>
+    <a id="Item8_c2" onkeydown="return searchResults.NavChild(event,8,2)" onkeypress="return searchResults.NavChild(event,8,2)" onkeyup="return searchResults.NavChild(event,8,2)" class="SRScope" href="../classst4tic_1_1_st4tic.html#aeb84ace85953b1988ea391820c668d96" target="_parent">st4tic::St4tic.St4tic(java.io.Reader stream)</a>
+    <a id="Item8_c3" onkeydown="return searchResults.NavChild(event,8,3)" onkeypress="return searchResults.NavChild(event,8,3)" onkeyup="return searchResults.NavChild(event,8,3)" class="SRScope" href="../classst4tic_1_1_st4tic.html#a55ddbdcf9d1ed1d295984e60020622e9" target="_parent">st4tic::St4tic.St4tic(St4ticTokenManager tm)</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_st4ticobject">
+ <div class="SREntry">
+  <a id="Item9" onkeydown="return searchResults.Nav(event,9)" onkeypress="return searchResults.Nav(event,9)" onkeyup="return searchResults.Nav(event,9)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_st4ticobject')">St4ticObject</a>
+  <div class="SRChildren">
+    <a id="Item9_c0" onkeydown="return searchResults.NavChild(event,9,0)" onkeypress="return searchResults.NavChild(event,9,0)" onkeyup="return searchResults.NavChild(event,9,0)" class="SRScope" href="../classst4tic_1_1core_1_1_st4tic_object.html#ae0d5ae63cee54270e5c5b56c490eb867" target="_parent">st4tic::core::St4ticObject.St4ticObject()</a>
+    <a id="Item9_c1" onkeydown="return searchResults.NavChild(event,9,1)" onkeypress="return searchResults.NavChild(event,9,1)" onkeyup="return searchResults.NavChild(event,9,1)" class="SRScope" href="../classst4tic_1_1core_1_1_st4tic_object.html#ae7bdb299c4bc11f6cf149d8893f1b107" target="_parent">st4tic::core::St4ticObject.St4ticObject(St4ticObject parent)</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_st4ticscope">
+ <div class="SREntry">
+  <a id="Item10" onkeydown="return searchResults.Nav(event,10)" onkeypress="return searchResults.Nav(event,10)" onkeyup="return searchResults.Nav(event,10)" class="SRSymbol" href="../classst4tic_1_1core_1_1_st4tic_scope.html#af7faeecea8743fe5f3a7d882b5269144" target="_parent">St4ticScope</a>
+  <span class="SRScope">st4tic::core::St4ticScope</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_st4tictokenmanager">
+ <div class="SREntry">
+  <a id="Item11" onkeydown="return searchResults.Nav(event,11)" onkeypress="return searchResults.Nav(event,11)" onkeyup="return searchResults.Nav(event,11)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_st4tictokenmanager')">St4ticTokenManager</a>
+  <div class="SRChildren">
+    <a id="Item11_c0" onkeydown="return searchResults.NavChild(event,11,0)" onkeypress="return searchResults.NavChild(event,11,0)" onkeyup="return searchResults.NavChild(event,11,0)" class="SRScope" href="../classst4tic_1_1_st4tic_token_manager.html#a53fb6e57c47b9ef2b53193ecc8100d44" target="_parent">st4tic::St4ticTokenManager.St4ticTokenManager(SimpleCharStream stream)</a>
+    <a id="Item11_c1" onkeydown="return searchResults.NavChild(event,11,1)" onkeypress="return searchResults.NavChild(event,11,1)" onkeyup="return searchResults.NavChild(event,11,1)" class="SRScope" href="../classst4tic_1_1_st4tic_token_manager.html#abe54c079253933955f960b342bdfc5f8" target="_parent">st4tic::St4ticTokenManager.St4ticTokenManager(SimpleCharStream stream, int lexState)</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_start">
+ <div class="SREntry">
+  <a id="Item12" onkeydown="return searchResults.Nav(event,12)" onkeypress="return searchResults.Nav(event,12)" onkeyup="return searchResults.Nav(event,12)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_start')">Start</a>
+  <div class="SRChildren">
+    <a id="Item12_c0" onkeydown="return searchResults.NavChild(event,12,0)" onkeypress="return searchResults.NavChild(event,12,0)" onkeyup="return searchResults.NavChild(event,12,0)" class="SRScope" href="../classst4tic_1_1_st4tic.html#a3dd81c724102d75164241bcb158dba92" target="_parent">st4tic::St4tic.Start()</a>
+    <a id="Item12_c1" onkeydown="return searchResults.NavChild(event,12,1)" onkeypress="return searchResults.NavChild(event,12,1)" onkeyup="return searchResults.NavChild(event,12,1)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_start.html#a75d068e98a69f1ff0327c820dd152234" target="_parent">st4tic::syntaxtree::Start.Start()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_statementexpression">
+ <div class="SREntry">
+  <a id="Item13" onkeydown="return searchResults.Nav(event,13)" onkeypress="return searchResults.Nav(event,13)" onkeyup="return searchResults.Nav(event,13)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_statementexpression')">StatementExpression</a>
+  <div class="SRChildren">
+    <a id="Item13_c0" onkeydown="return searchResults.NavChild(event,13,0)" onkeypress="return searchResults.NavChild(event,13,0)" onkeyup="return searchResults.NavChild(event,13,0)" class="SRScope" href="../classst4tic_1_1_st4tic.html#a3a9a9dea07fca66ec8b959e546a8fb25" target="_parent">st4tic::St4tic.StatementExpression()</a>
+    <a id="Item13_c1" onkeydown="return searchResults.NavChild(event,13,1)" onkeypress="return searchResults.NavChild(event,13,1)" onkeyup="return searchResults.NavChild(event,13,1)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_statement_expression.html#ae3e82e1f9c74cd0d082286139a82ab8a" target="_parent">st4tic::syntaxtree::StatementExpression.StatementExpression()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_switchto">
+ <div class="SREntry">
+  <a id="Item14" onkeydown="return searchResults.Nav(event,14)" onkeypress="return searchResults.Nav(event,14)" onkeyup="return searchResults.Nav(event,14)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a07d235cb5d991c4e9affe2a6ecc0aeb3" target="_parent">SwitchTo</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

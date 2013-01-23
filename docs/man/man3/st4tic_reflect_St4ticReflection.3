@@ -1,0 +1,134 @@
+.TH "st4tic::reflect::St4ticReflection" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::reflect::St4ticReflection \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBpushPackage\fP (String packageName)"
+.br
+.ti -1c
+.RI "static String \fBfullIdentifier\fP (String className)"
+.br
+.ti -1c
+.RI "static Class \fBmakeObject\fP (String className)"
+.br
+.ti -1c
+.RI "static boolean \fBexistsField\fP (Object classInstance, String fieldName)"
+.br
+.ti -1c
+.RI "static Object \fBgetFieldObject\fP (Object classInstance, String fieldName)"
+.br
+.ti -1c
+.RI "static boolean \fBexistsSubroutine\fP (Object classInstance, String methodName, St4ticValue...args)"
+.br
+.ti -1c
+.RI "static Object \fBinvokeStaticSubroutine\fP (Object classInstance, String methodName, St4ticValue...args)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Magical class for java reflection =)
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrabi Abderrahim 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static boolean st4tic.reflect.St4ticReflection.existsField (Object classInstance, String fieldName)\fC [static]\fP"Check existence of the field 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclassInstance\fP (Object : Class Object) 
+.br
+\fIfieldName\fP (String : Filed Name) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static boolean st4tic.reflect.St4ticReflection.existsSubroutine (Object classInstance, String methodName, St4ticValue... args)\fC [static]\fP"Check existence of the subroutine with a specified parameters 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclassInstance\fP (Object : Class Object) 
+.br
+\fImethodName\fP (String : Subroutine Name) 
+.br
+\fIargs\fP (St4ticValue[] : Types) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static String st4tic.reflect.St4ticReflection.fullIdentifier (String className)\fC [static]\fP"Get a full class identifier 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclassName\fP (String : Class Name) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static Object st4tic.reflect.St4ticReflection.getFieldObject (Object classInstance, String fieldName)\fC [static]\fP"Return a field object from spicified class name for statics 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclassInstance\fP (Object : Class Object) 
+.br
+\fIfieldName\fP (String : Field Name) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static Object st4tic.reflect.St4ticReflection.invokeStaticSubroutine (Object classInstance, String methodName, St4ticValue... args)\fC [static]\fP"For invoking a static subroutines and return value if is not void 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclassInstance\fP (Object : Class Object) 
+.br
+\fImethodName\fP (String : Method Name) 
+.br
+\fIargs\fP (St4ticValue[] : Method Arguments) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static Class st4tic.reflect.St4ticReflection.makeObject (String className)\fC [static]\fP"making an object from string name 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclassName\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static void st4tic.reflect.St4ticReflection.pushPackage (String packageName)\fC [static]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

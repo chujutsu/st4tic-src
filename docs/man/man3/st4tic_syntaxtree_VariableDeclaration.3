@@ -1,0 +1,87 @@
+.TH "st4tic::syntaxtree::VariableDeclaration" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::VariableDeclaration \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::Node\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVariableDeclaration\fP (\fBNodeToken\fP n0, \fBVariableName\fP n1, \fBNodeToken\fP n2, \fBMathExpression\fP n3, \fBNodeToken\fP n4)"
+.br
+.ti -1c
+.RI "\fBVariableDeclaration\fP (\fBVariableName\fP n0, \fBMathExpression\fP n1)"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNodeToken\fP \fBf0\fP"
+.br
+.ti -1c
+.RI "\fBVariableName\fP \fBf1\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf2\fP"
+.br
+.ti -1c
+.RI "\fBMathExpression\fP \fBf3\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf4\fP"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Grammar production: f0 -> 'def' f1 -> VariableName() f2 -> '=' f3 -> MathExpression() f4 -> '.' 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.syntaxtree.VariableDeclaration.VariableDeclaration (\fBNodeToken\fP n0, \fBVariableName\fP n1, \fBNodeToken\fP n2, \fBMathExpression\fP n3, \fBNodeToken\fP n4)"
+.SS "st4tic.syntaxtree.VariableDeclaration.VariableDeclaration (\fBVariableName\fP n0, \fBMathExpression\fP n1)"
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.VariableDeclaration.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R> R st4tic.syntaxtree.VariableDeclaration.accept (st4tic.visitor.GJNoArguVisitor< R > v)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R,A> R st4tic.syntaxtree.VariableDeclaration.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "void st4tic.syntaxtree.VariableDeclaration.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.VariableDeclaration.f0\fP"
+.SS "\fBVariableName\fP \fBst4tic.syntaxtree.VariableDeclaration.f1\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.VariableDeclaration.f2\fP"
+.SS "\fBMathExpression\fP \fBst4tic.syntaxtree.VariableDeclaration.f3\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.VariableDeclaration.f4\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

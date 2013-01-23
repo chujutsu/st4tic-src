@@ -1,0 +1,271 @@
+.TH "st4tic::SimpleCharStream" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::SimpleCharStream \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "char \fBBeginToken\fP ()  throws java.io.IOException   "
+.br
+.ti -1c
+.RI "char \fBreadChar\fP ()  throws java.io.IOException   "
+.br
+.ti -1c
+.RI "int \fBgetColumn\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetLine\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetEndColumn\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetEndLine\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetBeginColumn\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetBeginLine\fP ()"
+.br
+.ti -1c
+.RI "void \fBbackup\fP (int amount)"
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.Reader dstream, int startline, int startcolumn, int buffersize)"
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.Reader dstream, int startline, int startcolumn)"
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.Reader dstream)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.Reader dstream, int startline, int startcolumn, int buffersize)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.Reader dstream, int startline, int startcolumn)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.Reader dstream)"
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize)  throws java.io.UnsupportedEncodingException   "
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.InputStream dstream, int startline, int startcolumn, int buffersize)"
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.InputStream dstream, String encoding, int startline, int startcolumn)  throws java.io.UnsupportedEncodingException   "
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.InputStream dstream, int startline, int startcolumn)"
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.InputStream dstream, String encoding)  throws java.io.UnsupportedEncodingException   "
+.br
+.ti -1c
+.RI "\fBSimpleCharStream\fP (java.io.InputStream dstream)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize)  throws java.io.UnsupportedEncodingException   "
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream dstream, int startline, int startcolumn, int buffersize)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream dstream, String encoding)  throws java.io.UnsupportedEncodingException   "
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream dstream)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream dstream, String encoding, int startline, int startcolumn)  throws java.io.UnsupportedEncodingException   "
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream dstream, int startline, int startcolumn)"
+.br
+.ti -1c
+.RI "String \fBGetImage\fP ()"
+.br
+.ti -1c
+.RI "char[] \fBGetSuffix\fP (int len)"
+.br
+.ti -1c
+.RI "void \fBDone\fP ()"
+.br
+.ti -1c
+.RI "void \fBadjustBeginLineColumn\fP (int newLine, int newCol)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBbufpos\fP = -1"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final boolean \fBstaticFlag\fP = false"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetTabSize\fP (int i)"
+.br
+.ti -1c
+.RI "int \fBgetTabSize\fP (int i)"
+.br
+.ti -1c
+.RI "void \fBExpandBuff\fP (boolean wrapAround)"
+.br
+.ti -1c
+.RI "void \fBFillBuff\fP ()  throws java.io.IOException   "
+.br
+.ti -1c
+.RI "void \fBUpdateLineColumn\fP (char c)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBbufline\fP []"
+.br
+.ti -1c
+.RI "int \fBbufcolumn\fP []"
+.br
+.ti -1c
+.RI "int \fBcolumn\fP = 0"
+.br
+.ti -1c
+.RI "int \fBline\fP = 1"
+.br
+.ti -1c
+.RI "boolean \fBprevCharIsCR\fP = false"
+.br
+.ti -1c
+.RI "boolean \fBprevCharIsLF\fP = false"
+.br
+.ti -1c
+.RI "java.io.Reader \fBinputStream\fP"
+.br
+.ti -1c
+.RI "char[] \fBbuffer\fP"
+.br
+.ti -1c
+.RI "int \fBmaxNextCharInd\fP = 0"
+.br
+.ti -1c
+.RI "int \fBinBuf\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtabSize\fP = 8"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBbufsize\fP"
+.br
+.ti -1c
+.RI "int \fBavailable\fP"
+.br
+.ti -1c
+.RI "int \fBtokenBegin\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An implementation of interface CharStream, where the stream is assumed to contain only ASCII characters (without unicode processing). 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.Reader dstream, int startline, int startcolumn, int buffersize)"Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.Reader dstream, int startline, int startcolumn)"Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.Reader dstream)"Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize)  throws java.io.UnsupportedEncodingException   "Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.InputStream dstream, int startline, int startcolumn, int buffersize)"Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.InputStream dstream, String encoding, int startline, int startcolumn)  throws java.io.UnsupportedEncodingException   "Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.InputStream dstream, int startline, int startcolumn)"Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.InputStream dstream, String encoding)  throws java.io.UnsupportedEncodingException   "Constructor. 
+.SS "st4tic.SimpleCharStream.SimpleCharStream (java.io.InputStream dstream)"Constructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void st4tic.SimpleCharStream.adjustBeginLineColumn (int newLine, int newCol)"Method to adjust line and column numbers for the start of a token. 
+.SS "void st4tic.SimpleCharStream.backup (int amount)"Backup a number of characters. 
+.SS "char st4tic.SimpleCharStream.BeginToken ()  throws java.io.IOException   "Start. 
+.SS "void st4tic.SimpleCharStream.Done ()"Reset buffer when finished. 
+.SS "void st4tic.SimpleCharStream.ExpandBuff (boolean wrapAround)\fC [protected]\fP"
+.SS "void st4tic.SimpleCharStream.FillBuff ()  throws java.io.IOException   \fC [protected]\fP"
+.SS "int st4tic.SimpleCharStream.getBeginColumn ()"Get token beginning column number. 
+.SS "int st4tic.SimpleCharStream.getBeginLine ()"Get token beginning line number. 
+.SS "int st4tic.SimpleCharStream.getColumn ()"\fBDeprecated\fP
+.RS 4
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetEndColumn\fP 
+.RE
+.PP
+
+.SS "int st4tic.SimpleCharStream.getEndColumn ()"Get token end column number. 
+.SS "int st4tic.SimpleCharStream.getEndLine ()"Get token end line number. 
+.SS "String st4tic.SimpleCharStream.GetImage ()"Get token literal value. 
+.SS "int st4tic.SimpleCharStream.getLine ()"\fBDeprecated\fP
+.RS 4
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetEndLine\fP 
+.RE
+.PP
+
+.SS "char [] st4tic.SimpleCharStream.GetSuffix (int len)"Get the suffix. 
+.SS "int st4tic.SimpleCharStream.getTabSize (int i)\fC [protected]\fP"
+.SS "char st4tic.SimpleCharStream.readChar ()  throws java.io.IOException   "Read a character. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.InputStream dstream, int startline, int startcolumn)"Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.InputStream dstream, String encoding, int startline, int startcolumn)  throws java.io.UnsupportedEncodingException   "Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.InputStream dstream)"Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.InputStream dstream, String encoding)  throws java.io.UnsupportedEncodingException   "Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.InputStream dstream, int startline, int startcolumn, int buffersize)"Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize)  throws java.io.UnsupportedEncodingException   "Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.Reader dstream)"Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.Reader dstream, int startline, int startcolumn)"Reinitialise. 
+.SS "void st4tic.SimpleCharStream.ReInit (java.io.Reader dstream, int startline, int startcolumn, int buffersize)"Reinitialise. 
+.SS "void st4tic.SimpleCharStream.setTabSize (int i)\fC [protected]\fP"
+.SS "void st4tic.SimpleCharStream.UpdateLineColumn (char c)\fC [protected]\fP"
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBst4tic.SimpleCharStream.available\fP\fC [package]\fP"
+.SS "int \fBst4tic.SimpleCharStream.bufcolumn\fP[]\fC [protected]\fP"
+.SS "char [] \fBst4tic.SimpleCharStream.buffer\fP\fC [protected]\fP"
+.SS "int \fBst4tic.SimpleCharStream.bufline\fP[]\fC [protected]\fP"
+.SS "int \fBst4tic.SimpleCharStream.bufpos\fP = -1"Position in buffer. 
+.SS "int \fBst4tic.SimpleCharStream.bufsize\fP\fC [package]\fP"
+.SS "int \fBst4tic.SimpleCharStream.column\fP = 0\fC [protected]\fP"
+.SS "int \fBst4tic.SimpleCharStream.inBuf\fP = 0\fC [protected]\fP"
+.SS "java.io.Reader \fBst4tic.SimpleCharStream.inputStream\fP\fC [protected]\fP"
+.SS "int \fBst4tic.SimpleCharStream.line\fP = 1\fC [protected]\fP"
+.SS "int \fBst4tic.SimpleCharStream.maxNextCharInd\fP = 0\fC [protected]\fP"
+.SS "boolean \fBst4tic.SimpleCharStream.prevCharIsCR\fP = false\fC [protected]\fP"
+.SS "boolean \fBst4tic.SimpleCharStream.prevCharIsLF\fP = false\fC [protected]\fP"
+.SS "final boolean \fBst4tic.SimpleCharStream.staticFlag\fP = false\fC [static]\fP"Whether parser is static. 
+.SS "int \fBst4tic.SimpleCharStream.tabSize\fP = 8\fC [protected]\fP"
+.SS "int \fBst4tic.SimpleCharStream.tokenBegin\fP\fC [package]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

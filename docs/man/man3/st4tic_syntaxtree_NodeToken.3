@@ -1,0 +1,119 @@
+.TH "st4tic::syntaxtree::NodeToken" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::NodeToken \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::Node\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNodeToken\fP (String s)"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP (String s, int \fBkind\fP, int \fBbeginLine\fP, int \fBbeginColumn\fP, int \fBendLine\fP, int \fBendColumn\fP)"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBgetSpecialAt\fP (int i)"
+.br
+.ti -1c
+.RI "int \fBnumSpecials\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddSpecial\fP (\fBNodeToken\fP s)"
+.br
+.ti -1c
+.RI "void \fBtrimSpecials\fP ()"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "String \fBwithSpecials\fP ()"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBtokenImage\fP"
+.br
+.ti -1c
+.RI "Vector< \fBNodeToken\fP > \fBspecialTokens\fP"
+.br
+.ti -1c
+.RI "int \fBbeginLine\fP"
+.br
+.ti -1c
+.RI "int \fBbeginColumn\fP"
+.br
+.ti -1c
+.RI "int \fBendLine\fP"
+.br
+.ti -1c
+.RI "int \fBendColumn\fP"
+.br
+.ti -1c
+.RI "int \fBkind\fP"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a single token in the grammar. If the '-tk' option is used, also contains a Vector of preceding special tokens. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.syntaxtree.NodeToken.NodeToken (String s)"
+.SS "st4tic.syntaxtree.NodeToken.NodeToken (String s, int kind, int beginLine, int beginColumn, int endLine, int endColumn)"
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.NodeToken.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R> R st4tic.syntaxtree.NodeToken.accept (st4tic.visitor.GJNoArguVisitor< R > v)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R,A> R st4tic.syntaxtree.NodeToken.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "void st4tic.syntaxtree.NodeToken.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "void st4tic.syntaxtree.NodeToken.addSpecial (\fBNodeToken\fP s)"
+.SS "\fBNodeToken\fP st4tic.syntaxtree.NodeToken.getSpecialAt (int i)"
+.SS "int st4tic.syntaxtree.NodeToken.numSpecials ()"
+.SS "String st4tic.syntaxtree.NodeToken.toString ()"
+.SS "void st4tic.syntaxtree.NodeToken.trimSpecials ()"
+.SS "String st4tic.syntaxtree.NodeToken.withSpecials ()"
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBst4tic.syntaxtree.NodeToken.beginColumn\fP"
+.SS "int \fBst4tic.syntaxtree.NodeToken.beginLine\fP"
+.SS "int \fBst4tic.syntaxtree.NodeToken.endColumn\fP"
+.SS "int \fBst4tic.syntaxtree.NodeToken.endLine\fP"
+.SS "int \fBst4tic.syntaxtree.NodeToken.kind\fP"
+.SS "Vector<\fBNodeToken\fP> \fBst4tic.syntaxtree.NodeToken.specialTokens\fP"
+.SS "String \fBst4tic.syntaxtree.NodeToken.tokenImage\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

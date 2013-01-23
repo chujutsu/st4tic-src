@@ -1,0 +1,183 @@
+.TH "st4tic::St4ticTokenManager" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::St4ticTokenManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::St4ticConstants\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetDebugStream\fP (java.io.PrintStream ds)"
+.br
+.ti -1c
+.RI "\fBSt4ticTokenManager\fP (\fBSimpleCharStream\fP stream)"
+.br
+.ti -1c
+.RI "\fBSt4ticTokenManager\fP (\fBSimpleCharStream\fP stream, int lexState)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (\fBSimpleCharStream\fP stream)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (\fBSimpleCharStream\fP stream, int lexState)"
+.br
+.ti -1c
+.RI "void \fBSwitchTo\fP (int lexState)"
+.br
+.ti -1c
+.RI "\fBToken\fP \fBgetNextToken\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "java.io.PrintStream \fBdebugStream\fP = System.out"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final String[] \fBjjstrLiteralImages\fP"
+.br
+.ti -1c
+.RI "static final String[] \fBlexStateNames\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBToken\fP \fBjjFillToken\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSimpleCharStream\fP \fBinput_stream\fP"
+.br
+.ti -1c
+.RI "char \fBcurChar\fP"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBcurLexState\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdefaultLexState\fP = 0"
+.br
+.ti -1c
+.RI "int \fBjjnewStateCnt\fP"
+.br
+.ti -1c
+.RI "int \fBjjround\fP"
+.br
+.ti -1c
+.RI "int \fBjjmatchedPos\fP"
+.br
+.ti -1c
+.RI "int \fBjjmatchedKind\fP"
+.br
+.in -1c
+.SS "Static Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long[] \fBjjbitVec0\fP"
+.br
+.ti -1c
+.RI "static final int[] \fBjjnextStates\fP"
+.br
+.ti -1c
+.RI "static final long[] \fBjjtoToken\fP"
+.br
+.ti -1c
+.RI "static final long[] \fBjjtoSkip\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBToken\fP Manager. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.St4ticTokenManager.St4ticTokenManager (\fBSimpleCharStream\fP stream)"Constructor. 
+.SS "st4tic.St4ticTokenManager.St4ticTokenManager (\fBSimpleCharStream\fP stream, int lexState)"Constructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBToken\fP st4tic.St4ticTokenManager.getNextToken ()"Get the next \fBToken\fP. 
+.SS "\fBToken\fP st4tic.St4ticTokenManager.jjFillToken ()\fC [protected]\fP"
+.SS "void st4tic.St4ticTokenManager.ReInit (\fBSimpleCharStream\fP stream, int lexState)"Reinitialise parser. 
+.SS "void st4tic.St4ticTokenManager.ReInit (\fBSimpleCharStream\fP stream)"Reinitialise parser. 
+.SS "void st4tic.St4ticTokenManager.setDebugStream (java.io.PrintStream ds)"Set debug output. 
+.SS "void st4tic.St4ticTokenManager.SwitchTo (int lexState)"Switch to specified lex state. 
+.SH "Member Data Documentation"
+.PP 
+.SS "char \fBst4tic.St4ticTokenManager.curChar\fP\fC [protected]\fP"
+.SS "int \fBst4tic.St4ticTokenManager.curLexState\fP = 0\fC [package]\fP"
+.SS "java.io.PrintStream \fBst4tic.St4ticTokenManager.debugStream\fP = System.out"Debug output. 
+.SS "int \fBst4tic.St4ticTokenManager.defaultLexState\fP = 0\fC [package]\fP"
+.SS "\fBSimpleCharStream\fP \fBst4tic.St4ticTokenManager.input_stream\fP\fC [protected]\fP"
+.SS "final long [] \fBst4tic.St4ticTokenManager.jjbitVec0\fP\fC [static, package]\fP"\fBInitial value:\fP
+.PP
+.nf
+ {
+   0x0L, 0x0L, 0xffffffffffffffffL, 0xffffffffffffffffL
+}
+.fi
+.SS "int \fBst4tic.St4ticTokenManager.jjmatchedKind\fP\fC [package]\fP"
+.SS "int \fBst4tic.St4ticTokenManager.jjmatchedPos\fP\fC [package]\fP"
+.SS "int \fBst4tic.St4ticTokenManager.jjnewStateCnt\fP\fC [package]\fP"
+.SS "final int [] \fBst4tic.St4ticTokenManager.jjnextStates\fP\fC [static, package]\fP"\fBInitial value:\fP
+.PP
+.nf
+ {
+   11, 13, 7, 1, 2, 4, 
+}
+.fi
+.SS "int \fBst4tic.St4ticTokenManager.jjround\fP\fC [package]\fP"
+.SS "final String [] \fBst4tic.St4ticTokenManager.jjstrLiteralImages\fP\fC [static]\fP"\fBInitial value:\fP
+.PP
+.nf
+ {
+'', null, null, null, null, null, '\162\145\161\165\151\162\145', '\151\146', 
+'\167\150\151\154\145', '\144\157', '\163\164\157\160', '\144\145\146', '\56', '\72', '\75\75', '\76', 
+'\74', '\76\75', '\74\75', '\41\75', '\53', '\55', '\52', '\57', '\45', '\75', null, 
+null, null, null, null, null, null, '\50', '\51', '\54', }
+.fi
+\fBToken\fP literal values. 
+.SS "final long [] \fBst4tic.St4ticTokenManager.jjtoSkip\fP\fC [static, package]\fP"\fBInitial value:\fP
+.PP
+.nf
+ {
+   0x3eL, 
+}
+.fi
+.SS "final long [] \fBst4tic.St4ticTokenManager.jjtoToken\fP\fC [static, package]\fP"\fBInitial value:\fP
+.PP
+.nf
+ {
+   0xe47ffffc1L, 
+}
+.fi
+.SS "final String [] \fBst4tic.St4ticTokenManager.lexStateNames\fP\fC [static]\fP"\fBInitial value:\fP
+.PP
+.nf
+ {
+   'DEFAULT', 
+}
+.fi
+Lexer state names. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

@@ -1,0 +1,161 @@
+.TH "st4tic::visitor::GJNoArguDepthFirst< R >" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::visitor::GJNoArguDepthFirst< R > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::visitor::GJNoArguVisitor< R >\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "R \fBvisit\fP (\fBNodeList\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBNodeListOptional\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBNodeOptional\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBNodeSequence\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBNodeToken\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBStart\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBRequire\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBMathExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBAdditiveExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBMultiplicativeExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBUnaryExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBRelationalExprssion\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBRelationalEqualityExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBRelationalGreaterExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBRelationalLessExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBUnaryRelational\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBIfExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBWhileExpression\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBVariableDeclaration\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBVariableAssign\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBVariableName\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBJavaStaticMethods\fP n)"
+.br
+.ti -1c
+.RI "R \fBvisit\fP (\fBStatementExpression\fP n)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Provides default methods which visit each node in the tree in depth-first order. Your visitors may extend this class. 
+.SH "Member Function Documentation"
+.PP 
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBStatementExpression\fP n)"f0 -> VariableDeclaration() | VariableAssign() | JavaStaticMethods() | IfExpression() | WhileExpression() 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBJavaStaticMethods\fP n)"f0 -> <IDENTIFIER> f1 -> ( ':' <IDENTIFIER> )+ f2 -> '(' f3 -> MathExpression() f4 -> ( ',' MathExpression() )* f5 -> ')' f6 -> '.' 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBVariableName\fP n)"f0 -> <IDENTIFIER> 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBVariableAssign\fP n)"f0 -> VariableName() f1 -> '=' f2 -> MathExpression() f3 -> '.' 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBVariableDeclaration\fP n)"f0 -> 'def' f1 -> VariableName() f2 -> '=' f3 -> MathExpression() f4 -> '.' 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBWhileExpression\fP n)"f0 -> 'while' f1 -> RelationalExprssion() f2 -> 'do' f3 -> ( StatementExpression() )* f4 -> 'stop' 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBIfExpression\fP n)"f0 -> 'if' f1 -> RelationalExprssion() f2 -> 'do' f3 -> ( StatementExpression() )* f4 -> 'stop' 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBUnaryRelational\fP n)"f0 -> MathExpression() 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBRelationalLessExpression\fP n)"f0 -> UnaryRelational() f1 -> [ ( '<' | '<=' ) UnaryRelational() ] 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBRelationalGreaterExpression\fP n)"f0 -> RelationalLessExpression() f1 -> [ ( '>' | '>=' ) RelationalLessExpression() ] 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBRelationalEqualityExpression\fP n)"f0 -> RelationalGreaterExpression() f1 -> [ ( '==' | '!=' ) RelationalGreaterExpression() ] 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBRelationalExprssion\fP n)"f0 -> RelationalEqualityExpression() 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBUnaryExpression\fP n)"f0 -> '(' MathExpression() ')' | <INTEGER_LITERAL> | VariableName() 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBMultiplicativeExpression\fP n)"f0 -> UnaryExpression() f1 -> ( ( '*' | '/' | '%' ) UnaryExpression() )* 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBAdditiveExpression\fP n)"f0 -> MultiplicativeExpression() f1 -> ( ( '+' | '-' ) MultiplicativeExpression() )* 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBMathExpression\fP n)"f0 -> AdditiveExpression() 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBRequire\fP n)"f0 -> 'require' f1 -> ( <IDENTIFIER> )+ 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBStart\fP n)"f0 -> ( Require() '.' )+ f1 -> ( StatementExpression() )* 
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBNodeToken\fP n)"
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBNodeSequence\fP n)"
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBNodeOptional\fP n)"
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBNodeListOptional\fP n)"
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+.SS "R st4tic.visitor.GJNoArguDepthFirst< R >.visit (\fBNodeList\fP n)"
+.PP
+Implements \fBst4tic.visitor.GJNoArguVisitor< R >\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

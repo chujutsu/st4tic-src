@@ -1,0 +1,173 @@
+.TH "st4tic::interpreter::Interpreter" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::interpreter::Interpreter \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::interpreter::Interpret\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Object \fBvisit\fP (\fBStart\fP node)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRequire\fP node, \fBSt4ticScope\fP scope, Object...objects)"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBMathExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBAdditiveExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBMultiplicativeExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBUnaryExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalExprssion\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalEqualityExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalGreaterExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalLessExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBUnaryRelational\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBIfExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBWhileExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBVariableDeclaration\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBVariableAssign\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBVariableName\fP node, \fBSt4ticScope\fP scope, Object...objects)"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBJavaStaticMethods\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBStatementExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBSt4tic\fP \fBInterpreter\fP
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrabi Abderrahim 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBStatementExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "Statement is a \fBcore\fP of interpreting \fBSt4tic\fP source code 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBJavaStaticMethods\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "method for executing a static Java methods 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBVariableName\fP node, \fBSt4ticScope\fP scope, Object... objects)"getting a variable name 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBVariableAssign\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "assigning a new value to variable 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBVariableDeclaration\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "variable declaration and assignment 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBWhileExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "\fBSt4tic\fP 'while' expression 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBIfExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "\fBSt4tic\fP 'if' condition 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBUnaryRelational\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "method for getting a value to be tested 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBRelationalLessExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "test for less value '0 < 1' 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBRelationalGreaterExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "testing for greater value '1 > 0' 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBRelationalEqualityExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "testing for equality '1 == 1' 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBRelationalExprssion\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "relational testing ... 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBUnaryExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "getting values 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBMultiplicativeExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "multiplicative operation 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBAdditiveExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "additive operations 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBMathExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception "integers operation 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBRequire\fP node, \fBSt4ticScope\fP scope, Object... objects)"this method allow retrieving and transforming required packages to Java format 
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+.SS "Object st4tic.interpreter.Interpreter.visit (\fBStart\fP node)  throws Exception "here is start point for interpreting \fBSt4tic\fP 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implements \fBst4tic.interpreter.Interpret\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

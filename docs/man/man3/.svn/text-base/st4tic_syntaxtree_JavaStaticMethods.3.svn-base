@@ -1,0 +1,95 @@
+.TH "st4tic::syntaxtree::JavaStaticMethods" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::JavaStaticMethods \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::Node\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBJavaStaticMethods\fP (\fBNodeToken\fP n0, \fBNodeList\fP n1, \fBNodeToken\fP n2, \fBMathExpression\fP n3, \fBNodeListOptional\fP n4, \fBNodeToken\fP n5, \fBNodeToken\fP n6)"
+.br
+.ti -1c
+.RI "\fBJavaStaticMethods\fP (\fBNodeToken\fP n0, \fBNodeList\fP n1, \fBMathExpression\fP n2, \fBNodeListOptional\fP n3)"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNodeToken\fP \fBf0\fP"
+.br
+.ti -1c
+.RI "\fBNodeList\fP \fBf1\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf2\fP"
+.br
+.ti -1c
+.RI "\fBMathExpression\fP \fBf3\fP"
+.br
+.ti -1c
+.RI "\fBNodeListOptional\fP \fBf4\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf5\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf6\fP"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Grammar production: f0 -> <IDENTIFIER> f1 -> ( ':' <IDENTIFIER> )+ f2 -> '(' f3 -> MathExpression() f4 -> ( ',' MathExpression() )* f5 -> ')' f6 -> '.' 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.syntaxtree.JavaStaticMethods.JavaStaticMethods (\fBNodeToken\fP n0, \fBNodeList\fP n1, \fBNodeToken\fP n2, \fBMathExpression\fP n3, \fBNodeListOptional\fP n4, \fBNodeToken\fP n5, \fBNodeToken\fP n6)"
+.SS "st4tic.syntaxtree.JavaStaticMethods.JavaStaticMethods (\fBNodeToken\fP n0, \fBNodeList\fP n1, \fBMathExpression\fP n2, \fBNodeListOptional\fP n3)"
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.JavaStaticMethods.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R> R st4tic.syntaxtree.JavaStaticMethods.accept (st4tic.visitor.GJNoArguVisitor< R > v)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R,A> R st4tic.syntaxtree.JavaStaticMethods.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "void st4tic.syntaxtree.JavaStaticMethods.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.JavaStaticMethods.f0\fP"
+.SS "\fBNodeList\fP \fBst4tic.syntaxtree.JavaStaticMethods.f1\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.JavaStaticMethods.f2\fP"
+.SS "\fBMathExpression\fP \fBst4tic.syntaxtree.JavaStaticMethods.f3\fP"
+.SS "\fBNodeListOptional\fP \fBst4tic.syntaxtree.JavaStaticMethods.f4\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.JavaStaticMethods.f5\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.JavaStaticMethods.f6\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

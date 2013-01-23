@@ -1,0 +1,81 @@
+.TH "st4tic::syntaxtree::NodeListInterface" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::NodeListInterface \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::Node\fP.
+.PP
+Inherited by \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBaddNode\fP (\fBNode\fP n)"
+.br
+.ti -1c
+.RI "\fBNode\fP \fBelementAt\fP (int i)"
+.br
+.ti -1c
+.RI "java.util.Enumeration< \fBNode\fP > \fBelements\fP ()"
+.br
+.ti -1c
+.RI "int \fBsize\fP ()"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The interface which \fBNodeList\fP, \fBNodeListOptional\fP, and \fBNodeSequence\fP implement. 
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.NodeListInterface.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "public<R> R st4tic.syntaxtree.NodeListInterface.accept (st4tic.visitor.GJNoArguVisitor< R > v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "public<R,A> R st4tic.syntaxtree.NodeListInterface.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "void st4tic.syntaxtree.NodeListInterface.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "void st4tic.syntaxtree.NodeListInterface.addNode (\fBNode\fP n)"
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "\fBNode\fP st4tic.syntaxtree.NodeListInterface.elementAt (int i)"
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "java.util.Enumeration<\fBNode\fP> st4tic.syntaxtree.NodeListInterface.elements ()"
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+.SS "int st4tic.syntaxtree.NodeListInterface.size ()"
+.PP
+Implemented in \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, and \fBst4tic.syntaxtree.NodeSequence\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

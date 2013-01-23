@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_choice">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../classst4tic_1_1syntaxtree_1_1_node_choice.html#a5503e4b095b7728ba64b5a2579e96cde" target="_parent">choice</a>
+  <span class="SRScope">st4tic::syntaxtree::NodeChoice</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_colon">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="../interfacest4tic_1_1_st4tic_constants.html#aad39393cac9bf3cf983b430c929d40b6" target="_parent">COLON</a>
+  <span class="SRScope">st4tic::St4ticConstants</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_column">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../classst4tic_1_1_simple_char_stream.html#af28dd01da72dc381a35fd8b90a241179" target="_parent">column</a>
+  <span class="SRScope">st4tic::SimpleCharStream</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_curchar">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a35f9c07d4abbe64c02c6aa99e8db0048" target="_parent">curChar</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_curlexstate">
+ <div class="SREntry">
+  <a id="Item4" onkeydown="return searchResults.Nav(event,4)" onkeypress="return searchResults.Nav(event,4)" onkeyup="return searchResults.Nav(event,4)" class="SRSymbol" href="../classst4tic_1_1_st4tic_token_manager.html#a9d89192f6514b8e8fc9f63f2880ebcc9" target="_parent">curLexState</a>
+  <span class="SRScope">st4tic::St4ticTokenManager</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_currenttoken">
+ <div class="SREntry">
+  <a id="Item5" onkeydown="return searchResults.Nav(event,5)" onkeypress="return searchResults.Nav(event,5)" onkeyup="return searchResults.Nav(event,5)" class="SRSymbol" href="../classst4tic_1_1_parse_exception.html#a628659781994c58c59ec2d870ac1d5bf" target="_parent">currentToken</a>
+  <span class="SRScope">st4tic::ParseException</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

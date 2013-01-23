@@ -1,0 +1,108 @@
+.TH "st4tic::core::St4ticScope" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::core::St4ticScope \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::core::St4ticObject\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSt4ticScope\fP (\fBSt4ticObject\fP parent)"
+.br
+.ti -1c
+.RI "Hashtable< String, \fBSt4ticVariable\fP > \fBgetChilds\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBpushChild\fP (String name, \fBSt4ticVariable\fP child)"
+.br
+.ti -1c
+.RI "\fBSt4ticVariable\fP \fBchild\fP (String name)"
+.br
+.ti -1c
+.RI "boolean \fBexistsChild\fP (String name)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class base for scopes or blocks between ( do ... stop )
+.PP
+... something ... do here ... stop
+.PP
+like if or while statement
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrabi Abderrahim 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.core.St4ticScope.St4ticScope (\fBSt4ticObject\fP parent)"Constructor for setting up parent 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSt4ticVariable\fP st4tic.core.St4ticScope.child (String name)"Return a child by name, fetching finding in current scope and parents
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSt4ticVariable\fP 
+.RE
+.PP
+
+.SS "boolean st4tic.core.St4ticScope.existsChild (String name)"Check existens of variables 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+boolean 
+.RE
+.PP
+
+.SS "Hashtable<String,\fBSt4ticVariable\fP> st4tic.core.St4ticScope.getChilds ()"return a childs hash 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "boolean st4tic.core.St4ticScope.pushChild (String name, \fBSt4ticVariable\fP child)"Add a child (variable) to scope for variable lifecycle and variable visibility
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP 
+.br
+\fIchild\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+boolean 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

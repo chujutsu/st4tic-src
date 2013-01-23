@@ -1,0 +1,67 @@
+.TH "st4tic::syntaxtree::MathExpression" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::MathExpression \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::Node\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMathExpression\fP (\fBAdditiveExpression\fP n0)"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAdditiveExpression\fP \fBf0\fP"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Grammar production: f0 -> AdditiveExpression() 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.syntaxtree.MathExpression.MathExpression (\fBAdditiveExpression\fP n0)"
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.MathExpression.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R> R st4tic.syntaxtree.MathExpression.accept (st4tic.visitor.GJNoArguVisitor< R > v)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R,A> R st4tic.syntaxtree.MathExpression.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "void st4tic.syntaxtree.MathExpression.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAdditiveExpression\fP \fBst4tic.syntaxtree.MathExpression.f0\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

@@ -1,0 +1,47 @@
+.TH "st4tic::syntaxtree::Node" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::Node \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBst4tic.syntaxtree.AdditiveExpression\fP, \fBst4tic.syntaxtree.IfExpression\fP, \fBst4tic.syntaxtree.JavaStaticMethods\fP, \fBst4tic.syntaxtree.MathExpression\fP, \fBst4tic.syntaxtree.MultiplicativeExpression\fP, \fBst4tic.syntaxtree.NodeChoice\fP, \fBst4tic.syntaxtree.NodeListInterface\fP, \fBst4tic.syntaxtree.NodeOptional\fP, \fBst4tic.syntaxtree.NodeToken\fP, \fBst4tic.syntaxtree.RelationalEqualityExpression\fP, \fBst4tic.syntaxtree.RelationalExprssion\fP, \fBst4tic.syntaxtree.RelationalGreaterExpression\fP, \fBst4tic.syntaxtree.RelationalLessExpression\fP, \fBst4tic.syntaxtree.Require\fP, \fBst4tic.syntaxtree.Start\fP, \fBst4tic.syntaxtree.StatementExpression\fP, \fBst4tic.syntaxtree.UnaryExpression\fP, \fBst4tic.syntaxtree.UnaryRelational\fP, \fBst4tic.syntaxtree.VariableAssign\fP, \fBst4tic.syntaxtree.VariableDeclaration\fP, \fBst4tic.syntaxtree.VariableName\fP, and \fBst4tic.syntaxtree.WhileExpression\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The interface which all syntax tree classes must implement. 
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.Node.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.PP
+Implemented in \fBst4tic.syntaxtree.AdditiveExpression\fP, \fBst4tic.syntaxtree.IfExpression\fP, \fBst4tic.syntaxtree.JavaStaticMethods\fP, \fBst4tic.syntaxtree.MathExpression\fP, \fBst4tic.syntaxtree.MultiplicativeExpression\fP, \fBst4tic.syntaxtree.NodeChoice\fP, \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListInterface\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, \fBst4tic.syntaxtree.NodeOptional\fP, \fBst4tic.syntaxtree.NodeSequence\fP, \fBst4tic.syntaxtree.NodeToken\fP, \fBst4tic.syntaxtree.RelationalEqualityExpression\fP, \fBst4tic.syntaxtree.RelationalExprssion\fP, \fBst4tic.syntaxtree.RelationalGreaterExpression\fP, \fBst4tic.syntaxtree.RelationalLessExpression\fP, \fBst4tic.syntaxtree.Require\fP, \fBst4tic.syntaxtree.Start\fP, \fBst4tic.syntaxtree.StatementExpression\fP, \fBst4tic.syntaxtree.UnaryExpression\fP, \fBst4tic.syntaxtree.UnaryRelational\fP, \fBst4tic.syntaxtree.VariableAssign\fP, \fBst4tic.syntaxtree.VariableDeclaration\fP, \fBst4tic.syntaxtree.VariableName\fP, and \fBst4tic.syntaxtree.WhileExpression\fP.
+.SS "public<R> R st4tic.syntaxtree.Node.accept (st4tic.visitor.GJNoArguVisitor< R > v)"
+.PP
+Implemented in \fBst4tic.syntaxtree.AdditiveExpression\fP, \fBst4tic.syntaxtree.IfExpression\fP, \fBst4tic.syntaxtree.JavaStaticMethods\fP, \fBst4tic.syntaxtree.MathExpression\fP, \fBst4tic.syntaxtree.MultiplicativeExpression\fP, \fBst4tic.syntaxtree.NodeChoice\fP, \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListInterface\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, \fBst4tic.syntaxtree.NodeOptional\fP, \fBst4tic.syntaxtree.NodeSequence\fP, \fBst4tic.syntaxtree.NodeToken\fP, \fBst4tic.syntaxtree.RelationalEqualityExpression\fP, \fBst4tic.syntaxtree.RelationalExprssion\fP, \fBst4tic.syntaxtree.RelationalGreaterExpression\fP, \fBst4tic.syntaxtree.RelationalLessExpression\fP, \fBst4tic.syntaxtree.Require\fP, \fBst4tic.syntaxtree.Start\fP, \fBst4tic.syntaxtree.StatementExpression\fP, \fBst4tic.syntaxtree.UnaryExpression\fP, \fBst4tic.syntaxtree.UnaryRelational\fP, \fBst4tic.syntaxtree.VariableAssign\fP, \fBst4tic.syntaxtree.VariableDeclaration\fP, \fBst4tic.syntaxtree.VariableName\fP, and \fBst4tic.syntaxtree.WhileExpression\fP.
+.SS "public<R,A> R st4tic.syntaxtree.Node.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.PP
+Implemented in \fBst4tic.syntaxtree.AdditiveExpression\fP, \fBst4tic.syntaxtree.IfExpression\fP, \fBst4tic.syntaxtree.JavaStaticMethods\fP, \fBst4tic.syntaxtree.MathExpression\fP, \fBst4tic.syntaxtree.MultiplicativeExpression\fP, \fBst4tic.syntaxtree.NodeChoice\fP, \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListInterface\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, \fBst4tic.syntaxtree.NodeOptional\fP, \fBst4tic.syntaxtree.NodeSequence\fP, \fBst4tic.syntaxtree.NodeToken\fP, \fBst4tic.syntaxtree.RelationalEqualityExpression\fP, \fBst4tic.syntaxtree.RelationalExprssion\fP, \fBst4tic.syntaxtree.RelationalGreaterExpression\fP, \fBst4tic.syntaxtree.RelationalLessExpression\fP, \fBst4tic.syntaxtree.Require\fP, \fBst4tic.syntaxtree.Start\fP, \fBst4tic.syntaxtree.StatementExpression\fP, \fBst4tic.syntaxtree.UnaryExpression\fP, \fBst4tic.syntaxtree.UnaryRelational\fP, \fBst4tic.syntaxtree.VariableAssign\fP, \fBst4tic.syntaxtree.VariableDeclaration\fP, \fBst4tic.syntaxtree.VariableName\fP, and \fBst4tic.syntaxtree.WhileExpression\fP.
+.SS "void st4tic.syntaxtree.Node.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implemented in \fBst4tic.syntaxtree.AdditiveExpression\fP, \fBst4tic.syntaxtree.IfExpression\fP, \fBst4tic.syntaxtree.JavaStaticMethods\fP, \fBst4tic.syntaxtree.MathExpression\fP, \fBst4tic.syntaxtree.MultiplicativeExpression\fP, \fBst4tic.syntaxtree.NodeChoice\fP, \fBst4tic.syntaxtree.NodeList\fP, \fBst4tic.syntaxtree.NodeListInterface\fP, \fBst4tic.syntaxtree.NodeListOptional\fP, \fBst4tic.syntaxtree.NodeOptional\fP, \fBst4tic.syntaxtree.NodeSequence\fP, \fBst4tic.syntaxtree.NodeToken\fP, \fBst4tic.syntaxtree.RelationalEqualityExpression\fP, \fBst4tic.syntaxtree.RelationalExprssion\fP, \fBst4tic.syntaxtree.RelationalGreaterExpression\fP, \fBst4tic.syntaxtree.RelationalLessExpression\fP, \fBst4tic.syntaxtree.Require\fP, \fBst4tic.syntaxtree.Start\fP, \fBst4tic.syntaxtree.StatementExpression\fP, \fBst4tic.syntaxtree.UnaryExpression\fP, \fBst4tic.syntaxtree.UnaryRelational\fP, \fBst4tic.syntaxtree.VariableAssign\fP, \fBst4tic.syntaxtree.VariableDeclaration\fP, \fBst4tic.syntaxtree.VariableName\fP, and \fBst4tic.syntaxtree.WhileExpression\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

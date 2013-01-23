@@ -1,0 +1,22 @@
+.TH "st4tic::JTBToolkit" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::JTBToolkit \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Package Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBNodeToken\fP \fBmakeNodeToken\fP (\fBToken\fP t)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBNodeToken\fP st4tic.JTBToolkit.makeNodeToken (\fBToken\fP t)\fC [static, package]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

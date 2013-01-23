@@ -1,0 +1,97 @@
+.TH "st4tic::Token" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::Token \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Object \fBgetValue\fP ()"
+.br
+.ti -1c
+.RI "\fBToken\fP ()"
+.br
+.ti -1c
+.RI "\fBToken\fP (int \fBkind\fP)"
+.br
+.ti -1c
+.RI "\fBToken\fP (int \fBkind\fP, String \fBimage\fP)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBToken\fP \fBnewToken\fP (int ofKind, String \fBimage\fP)"
+.br
+.ti -1c
+.RI "static \fBToken\fP \fBnewToken\fP (int ofKind)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBkind\fP"
+.br
+.ti -1c
+.RI "int \fBbeginLine\fP"
+.br
+.ti -1c
+.RI "int \fBbeginColumn\fP"
+.br
+.ti -1c
+.RI "int \fBendLine\fP"
+.br
+.ti -1c
+.RI "int \fBendColumn\fP"
+.br
+.ti -1c
+.RI "String \fBimage\fP"
+.br
+.ti -1c
+.RI "\fBToken\fP \fBnext\fP"
+.br
+.ti -1c
+.RI "\fBToken\fP \fBspecialToken\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Describes the input token stream. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.Token.Token ()"No-argument constructor 
+.SS "st4tic.Token.Token (int kind)"Constructs a new token for the specified Image. 
+.SS "st4tic.Token.Token (int kind, String image)"Constructs a new token for the specified Image and Kind. 
+.SH "Member Function Documentation"
+.PP 
+.SS "Object st4tic.Token.getValue ()"An optional attribute value of the \fBToken\fP. Tokens which are not used as syntactic sugar will often contain meaningful values that will be used later on by the compiler or \fBinterpreter\fP. This attribute value is often different from the image. Any subclass of \fBToken\fP that actually wants to return a non-null value can override this method as appropriate. 
+.SS "static \fBToken\fP st4tic.Token.newToken (int ofKind)\fC [static]\fP"
+.SS "static \fBToken\fP st4tic.Token.newToken (int ofKind, String image)\fC [static]\fP"Returns a new \fBToken\fP object, by default. However, if you want, you can create and return subclass objects based on the value of ofKind. Simply add the cases to the switch for all those special cases. For example, if you have a subclass of \fBToken\fP called IDToken that you want to create if ofKind is ID, simply add something like :
+.PP
+case MyParserConstants.ID : return new IDToken(ofKind, image);
+.PP
+to the following switch statement. Then you can cast matchedToken variable to the appropriate type and use sit in your lexical actions. 
+.SS "String st4tic.Token.toString ()"Returns the image. 
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBst4tic.Token.beginColumn\fP"The column number of the first character of this \fBToken\fP. 
+.SS "int \fBst4tic.Token.beginLine\fP"The line number of the first character of this \fBToken\fP. 
+.SS "int \fBst4tic.Token.endColumn\fP"The column number of the last character of this \fBToken\fP. 
+.SS "int \fBst4tic.Token.endLine\fP"The line number of the last character of this \fBToken\fP. 
+.SS "String \fBst4tic.Token.image\fP"The string image of the token. 
+.SS "int \fBst4tic.Token.kind\fP"An integer that describes the kind of this token. This numbering system is determined by JavaCCParser, and a table of these numbers is stored in the file ...Constants.java. 
+.SS "\fBToken\fP \fBst4tic.Token.next\fP"A reference to the next regular (non-special) token from the input stream. If this is the last token from the input stream, or if the token manager has not read tokens beyond this one, this field is set to null. This is true only if this token is also a regular token. Otherwise, see below for a description of the contents of this field. 
+.SS "\fBToken\fP \fBst4tic.Token.specialToken\fP"This field is used to access special tokens that occur prior to this token, but after the immediately preceding regular (non-special) token. If there are no such special tokens, this field is set to null. When there are more than one such special token, this field refers to the last of these special tokens, which in turn refers to the next previous special token through its specialToken field, and so on until the first special token (whose specialToken field is null). The next fields of special tokens refer to other special tokens that immediately follow it (without an intervening regular token). If there is no such token, this field is null. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

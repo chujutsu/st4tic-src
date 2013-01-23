@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor
+END
+GJVoidDepthFirst.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/GJVoidDepthFirst.java
+END
+Visitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/Visitor.java
+END
+GJVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/GJVisitor.java
+END
+GJVoidVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/GJVoidVisitor.java
+END
+GJNoArguDepthFirst.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/GJNoArguDepthFirst.java
+END
+DepthFirstVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/DepthFirstVisitor.java
+END
+GJNoArguVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/GJNoArguVisitor.java
+END
+GJDepthFirst.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/alefpp/!svn/ver/292/tutorial/st4tic/src/st4tic/visitor/GJDepthFirst.java
+END

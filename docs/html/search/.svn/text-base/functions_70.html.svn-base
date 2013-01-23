@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_parseexception">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_parseexception')">ParseException</a>
+  <div class="SRChildren">
+    <a id="Item0_c0" onkeydown="return searchResults.NavChild(event,0,0)" onkeypress="return searchResults.NavChild(event,0,0)" onkeyup="return searchResults.NavChild(event,0,0)" class="SRScope" href="../classst4tic_1_1_parse_exception.html#afcb216378d8292826ee523d3a6052ad2" target="_parent">st4tic::ParseException.ParseException(Token currentTokenVal, int[][] expectedTokenSequencesVal, String[] tokenImageVal)</a>
+    <a id="Item0_c1" onkeydown="return searchResults.NavChild(event,0,1)" onkeypress="return searchResults.NavChild(event,0,1)" onkeyup="return searchResults.NavChild(event,0,1)" class="SRScope" href="../classst4tic_1_1_parse_exception.html#ad5e35ec3249d4427d3aa7e41ebb1832a" target="_parent">st4tic::ParseException.ParseException()</a>
+    <a id="Item0_c2" onkeydown="return searchResults.NavChild(event,0,2)" onkeypress="return searchResults.NavChild(event,0,2)" onkeyup="return searchResults.NavChild(event,0,2)" class="SRScope" href="../classst4tic_1_1_parse_exception.html#aab6cdae9ef3438c2c3246155f77de68d" target="_parent">st4tic::ParseException.ParseException(String message)</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_present">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_present')">present</a>
+  <div class="SRChildren">
+    <a id="Item1_c0" onkeydown="return searchResults.NavChild(event,1,0)" onkeypress="return searchResults.NavChild(event,1,0)" onkeyup="return searchResults.NavChild(event,1,0)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_node_list_optional.html#a7de8f8055e04ab86326c8880c56ef31d" target="_parent">st4tic::syntaxtree::NodeListOptional.present()</a>
+    <a id="Item1_c1" onkeydown="return searchResults.NavChild(event,1,1)" onkeypress="return searchResults.NavChild(event,1,1)" onkeyup="return searchResults.NavChild(event,1,1)" class="SRScope" href="../classst4tic_1_1syntaxtree_1_1_node_optional.html#aa09cbb8bd12c225ea281607ca91a9388" target="_parent">st4tic::syntaxtree::NodeOptional.present()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_pushchild">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../classst4tic_1_1core_1_1_st4tic_scope.html#a16b6a4303cdbefca95d9e4b869600295" target="_parent">pushChild</a>
+  <span class="SRScope">st4tic::core::St4ticScope</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_pushpackage">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../classst4tic_1_1reflect_1_1_st4tic_reflection.html#aabac76815db6b918429468154e1f43fa" target="_parent">pushPackage</a>
+  <span class="SRScope">st4tic::reflect::St4ticReflection</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

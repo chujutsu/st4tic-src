@@ -1,0 +1,99 @@
+.TH "st4tic::syntaxtree::NodeListOptional" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::NodeListOptional \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::NodeListInterface\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNodeListOptional\fP ()"
+.br
+.ti -1c
+.RI "\fBNodeListOptional\fP (\fBNode\fP firstNode)"
+.br
+.ti -1c
+.RI "void \fBaddNode\fP (\fBNode\fP n)"
+.br
+.ti -1c
+.RI "Enumeration< \fBNode\fP > \fBelements\fP ()"
+.br
+.ti -1c
+.RI "\fBNode\fP \fBelementAt\fP (int i)"
+.br
+.ti -1c
+.RI "int \fBsize\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBpresent\fP ()"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Vector< \fBNode\fP > \fBnodes\fP"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents an optional grammar list, e.g. ( A )* 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.syntaxtree.NodeListOptional.NodeListOptional ()"
+.SS "st4tic.syntaxtree.NodeListOptional.NodeListOptional (\fBNode\fP firstNode)"
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.NodeListOptional.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "public<R> R st4tic.syntaxtree.NodeListOptional.accept (st4tic.visitor.GJNoArguVisitor< R > v)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "public<R,A> R st4tic.syntaxtree.NodeListOptional.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "void st4tic.syntaxtree.NodeListOptional.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "void st4tic.syntaxtree.NodeListOptional.addNode (\fBNode\fP n)"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "\fBNode\fP st4tic.syntaxtree.NodeListOptional.elementAt (int i)"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "Enumeration<\fBNode\fP> st4tic.syntaxtree.NodeListOptional.elements ()"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SS "boolean st4tic.syntaxtree.NodeListOptional.present ()"
+.SS "int st4tic.syntaxtree.NodeListOptional.size ()"
+.PP
+Implements \fBst4tic.syntaxtree.NodeListInterface\fP.
+.SH "Member Data Documentation"
+.PP 
+.SS "Vector<\fBNode\fP> \fBst4tic.syntaxtree.NodeListOptional.nodes\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

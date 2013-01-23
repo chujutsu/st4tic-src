@@ -1,0 +1,190 @@
+.TH "st4tic::St4tic" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::St4tic \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::St4ticConstants\fP.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBJJCalls\fP"
+.br
+.ti -1c
+.RI "class \fBLookaheadSuccess\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "final \fBStart\fP \fBStart\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBRequire\fP \fBRequire\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBMathExpression\fP \fBMathExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBAdditiveExpression\fP \fBAdditiveExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBMultiplicativeExpression\fP \fBMultiplicativeExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBUnaryExpression\fP \fBUnaryExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBRelationalExprssion\fP \fBRelationalExprssion\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBRelationalEqualityExpression\fP \fBRelationalEqualityExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBRelationalGreaterExpression\fP \fBRelationalGreaterExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBRelationalLessExpression\fP \fBRelationalLessExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBUnaryRelational\fP \fBUnaryRelational\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBIfExpression\fP \fBIfExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBWhileExpression\fP \fBWhileExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBVariableDeclaration\fP \fBVariableDeclaration\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBVariableAssign\fP \fBVariableAssign\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBVariableName\fP \fBVariableName\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBJavaStaticMethods\fP \fBJavaStaticMethods\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "final \fBStatementExpression\fP \fBStatementExpression\fP ()  throws ParseException "
+.br
+.ti -1c
+.RI "\fBSt4tic\fP (java.io.InputStream stream)"
+.br
+.ti -1c
+.RI "\fBSt4tic\fP (java.io.InputStream stream, String encoding)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream stream)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.InputStream stream, String encoding)"
+.br
+.ti -1c
+.RI "\fBSt4tic\fP (java.io.Reader stream)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (java.io.Reader stream)"
+.br
+.ti -1c
+.RI "\fBSt4tic\fP (\fBSt4ticTokenManager\fP tm)"
+.br
+.ti -1c
+.RI "void \fBReInit\fP (\fBSt4ticTokenManager\fP tm)"
+.br
+.ti -1c
+.RI "final \fBToken\fP \fBgetNextToken\fP ()"
+.br
+.ti -1c
+.RI "final \fBToken\fP \fBgetToken\fP (int index)"
+.br
+.ti -1c
+.RI "\fBParseException\fP \fBgenerateParseException\fP ()"
+.br
+.ti -1c
+.RI "final void \fBenable_tracing\fP ()"
+.br
+.ti -1c
+.RI "final void \fBdisable_tracing\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSt4ticTokenManager\fP \fBtoken_source\fP"
+.br
+.ti -1c
+.RI "\fBToken\fP \fBtoken\fP"
+.br
+.ti -1c
+.RI "\fBToken\fP \fBjj_nt\fP"
+.br
+.in -1c
+.SS "Static Package Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB[static initializer]\fP"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSimpleCharStream\fP \fBjj_input_stream\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.St4tic.St4tic (java.io.InputStream stream)"Constructor with InputStream. 
+.SS "st4tic.St4tic.St4tic (java.io.InputStream stream, String encoding)"Constructor with InputStream and supplied encoding 
+.SS "st4tic.St4tic.St4tic (java.io.Reader stream)"Constructor. 
+.SS "st4tic.St4tic.St4tic (\fBSt4ticTokenManager\fP tm)"Constructor with generated \fBToken\fP Manager. 
+.SH "Member Function Documentation"
+.PP 
+.SS "st4tic.St4tic.[static initializer] ()\fC [static, package]\fP"
+.SS "final \fBAdditiveExpression\fP st4tic.St4tic.AdditiveExpression ()  throws \fBParseException\fP "
+.SS "final void st4tic.St4tic.disable_tracing ()"Disable tracing. 
+.SS "final void st4tic.St4tic.enable_tracing ()"Enable tracing. 
+.SS "\fBParseException\fP st4tic.St4tic.generateParseException ()"Generate \fBParseException\fP. 
+.SS "final \fBToken\fP st4tic.St4tic.getNextToken ()"Get the next \fBToken\fP. 
+.SS "final \fBToken\fP st4tic.St4tic.getToken (int index)"Get the specific \fBToken\fP. 
+.SS "final \fBIfExpression\fP st4tic.St4tic.IfExpression ()  throws \fBParseException\fP "
+.SS "final \fBJavaStaticMethods\fP st4tic.St4tic.JavaStaticMethods ()  throws \fBParseException\fP "
+.SS "final \fBMathExpression\fP st4tic.St4tic.MathExpression ()  throws \fBParseException\fP "
+.SS "final \fBMultiplicativeExpression\fP st4tic.St4tic.MultiplicativeExpression ()  throws \fBParseException\fP "
+.SS "void st4tic.St4tic.ReInit (\fBSt4ticTokenManager\fP tm)"Reinitialise. 
+.SS "void st4tic.St4tic.ReInit (java.io.Reader stream)"Reinitialise. 
+.SS "void st4tic.St4tic.ReInit (java.io.InputStream stream, String encoding)"Reinitialise. 
+.SS "void st4tic.St4tic.ReInit (java.io.InputStream stream)"Reinitialise. 
+.SS "final \fBRelationalEqualityExpression\fP st4tic.St4tic.RelationalEqualityExpression ()  throws \fBParseException\fP "
+.SS "final \fBRelationalExprssion\fP st4tic.St4tic.RelationalExprssion ()  throws \fBParseException\fP "
+.SS "final \fBRelationalGreaterExpression\fP st4tic.St4tic.RelationalGreaterExpression ()  throws \fBParseException\fP "
+.SS "final \fBRelationalLessExpression\fP st4tic.St4tic.RelationalLessExpression ()  throws \fBParseException\fP "
+.SS "final \fBRequire\fP st4tic.St4tic.Require ()  throws \fBParseException\fP "
+.SS "final \fBStart\fP st4tic.St4tic.Start ()  throws \fBParseException\fP "
+.SS "final \fBStatementExpression\fP st4tic.St4tic.StatementExpression ()  throws \fBParseException\fP "
+.SS "final \fBUnaryExpression\fP st4tic.St4tic.UnaryExpression ()  throws \fBParseException\fP "
+.SS "final \fBUnaryRelational\fP st4tic.St4tic.UnaryRelational ()  throws \fBParseException\fP "
+.SS "final \fBVariableAssign\fP st4tic.St4tic.VariableAssign ()  throws \fBParseException\fP "
+.SS "final \fBVariableDeclaration\fP st4tic.St4tic.VariableDeclaration ()  throws \fBParseException\fP "
+.SS "final \fBVariableName\fP st4tic.St4tic.VariableName ()  throws \fBParseException\fP "
+.SS "final \fBWhileExpression\fP st4tic.St4tic.WhileExpression ()  throws \fBParseException\fP "
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSimpleCharStream\fP \fBst4tic.St4tic.jj_input_stream\fP\fC [package]\fP"
+.SS "\fBToken\fP \fBst4tic.St4tic.jj_nt\fP"Next token. 
+.SS "\fBToken\fP \fBst4tic.St4tic.token\fP"Current token. 
+.SS "\fBSt4ticTokenManager\fP \fBst4tic.St4tic.token_source\fP"Generated \fBToken\fP Manager. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

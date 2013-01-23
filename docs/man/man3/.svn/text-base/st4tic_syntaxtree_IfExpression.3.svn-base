@@ -1,0 +1,87 @@
+.TH "st4tic::syntaxtree::IfExpression" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::syntaxtree::IfExpression \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBst4tic::syntaxtree::Node\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIfExpression\fP (\fBNodeToken\fP n0, \fBRelationalExprssion\fP n1, \fBNodeToken\fP n2, \fBNodeListOptional\fP n3, \fBNodeToken\fP n4)"
+.br
+.ti -1c
+.RI "\fBIfExpression\fP (\fBRelationalExprssion\fP n0, \fBNodeListOptional\fP n1)"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBst4tic.visitor.Visitor\fP v)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNodeToken\fP \fBf0\fP"
+.br
+.ti -1c
+.RI "\fBRelationalExprssion\fP \fBf1\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf2\fP"
+.br
+.ti -1c
+.RI "\fBNodeListOptional\fP \fBf3\fP"
+.br
+.ti -1c
+.RI "\fBNodeToken\fP \fBf4\fP"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "public< R, A > R \fBaccept\fP (st4tic.visitor.GJVisitor< R, A > v, A argu)"
+.br
+.ti -1c
+.RI "public< R > R \fBaccept\fP (st4tic.visitor.GJNoArguVisitor< R > v)"
+.br
+.ti -1c
+.RI "public< A > void \fBaccept\fP (st4tic.visitor.GJVoidVisitor< A > v, A argu)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Grammar production: f0 -> 'if' f1 -> RelationalExprssion() f2 -> 'do' f3 -> ( StatementExpression() )* f4 -> 'stop' 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "st4tic.syntaxtree.IfExpression.IfExpression (\fBNodeToken\fP n0, \fBRelationalExprssion\fP n1, \fBNodeToken\fP n2, \fBNodeListOptional\fP n3, \fBNodeToken\fP n4)"
+.SS "st4tic.syntaxtree.IfExpression.IfExpression (\fBRelationalExprssion\fP n0, \fBNodeListOptional\fP n1)"
+.SH "Member Function Documentation"
+.PP 
+.SS "public<A> void st4tic.syntaxtree.IfExpression.accept (st4tic.visitor.GJVoidVisitor< A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R> R st4tic.syntaxtree.IfExpression.accept (st4tic.visitor.GJNoArguVisitor< R > v)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "public<R,A> R st4tic.syntaxtree.IfExpression.accept (st4tic.visitor.GJVisitor< R, A > v, A argu)\fC [package]\fP"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SS "void st4tic.syntaxtree.IfExpression.accept (\fBst4tic.visitor.Visitor\fP v)"
+.PP
+Implements \fBst4tic.syntaxtree.Node\fP.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.IfExpression.f0\fP"
+.SS "\fBRelationalExprssion\fP \fBst4tic.syntaxtree.IfExpression.f1\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.IfExpression.f2\fP"
+.SS "\fBNodeListOptional\fP \fBst4tic.syntaxtree.IfExpression.f3\fP"
+.SS "\fBNodeToken\fP \fBst4tic.syntaxtree.IfExpression.f4\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.

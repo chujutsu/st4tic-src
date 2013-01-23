@@ -1,0 +1,250 @@
+.TH "st4tic::interpreter::Interpret" 3 "27 Dec 2009" "Version 1.0" "St4tic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+st4tic::interpreter::Interpret \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBst4tic.interpreter.Interpreter\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Object \fBvisit\fP (\fBStart\fP node)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRequire\fP node, \fBSt4ticScope\fP scope, Object...objects)"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBMathExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBAdditiveExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBMultiplicativeExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBUnaryExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalExprssion\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalEqualityExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalGreaterExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBRelationalLessExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBUnaryRelational\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBIfExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBWhileExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBVariableDeclaration\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBVariableAssign\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBVariableName\fP node, \fBSt4ticScope\fP scope, Object...objects)"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBJavaStaticMethods\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.ti -1c
+.RI "Object \fBvisit\fP (\fBStatementExpression\fP node, \fBSt4ticScope\fP scope, Object...objects)  throws Exception"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface for \fBinterpreter\fP
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrabi Abderrahim 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "Object st4tic.interpreter.Interpret.visit (\fBStatementExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> VariableDeclaration() | VariableAssign() | JavaStaticMethods() | IfExpression() | WhileExpression() 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBJavaStaticMethods\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> <IDENTIFIER> f1 -> ( ':' <IDENTIFIER> )+ f2 -> '(' f3 -> MathExpression() f4 -> ( ',' MathExpression() )* f5 -> ')' f6 -> '.' 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBVariableName\fP node, \fBSt4ticScope\fP scope, Object... objects)"f0 -> <IDENTIFIER> 
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBVariableAssign\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> VariableName() f1 -> '=' f2 -> MathExpression() f3 -> '.' 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBVariableDeclaration\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> 'def' f1 -> VariableName() f2 -> '=' f3 -> MathExpression() f4 -> '.' 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBWhileExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> 'while' f1 -> RelationalExprssion() f2 -> 'do' f3 -> ( StatementExpression() )* f4 -> 'stop' 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBIfExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> 'if' f1 -> RelationalExprssion() f2 -> 'do' f3 -> ( StatementExpression() )* f4 -> 'stop' 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBUnaryRelational\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> MathExpression() 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBRelationalLessExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> UnaryRelational() f1 -> ( ( '<' | '<=' ) UnaryRelational() )* 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBRelationalGreaterExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> RelationalLessExpression() f1 -> ( ( '>' | '>=' ) RelationalLessExpression() )* 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBRelationalEqualityExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> RelationalGreaterExpression() f1 -> ( ( '==' | '!=' ) RelationalGreaterExpression() )* 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBRelationalExprssion\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> RelationalEqualityExpression() 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBUnaryExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> '(' MathExpression() ')' | <INTEGER_LITERAL> | VariableName() 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBMultiplicativeExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> UnaryExpression() f1 -> ( ( '*' | '/' | '%' ) UnaryExpression() )* 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBAdditiveExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> MultiplicativeExpression() f1 -> ( ( '+' | '-' ) MultiplicativeExpression() )* 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBMathExpression\fP node, \fBSt4ticScope\fP scope, Object... objects)  throws Exception"f0 -> AdditiveExpression() 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBRequire\fP node, \fBSt4ticScope\fP scope, Object... objects)"f0 -> 'require' f1 -> ( <IDENTIFIER> )+ 
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+.SS "Object st4tic.interpreter.Interpret.visit (\fBStart\fP node)  throws Exception"f0 -> ( Require() '.' )+ f1 -> ( StatementExpression() )* 
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIException\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBst4tic.interpreter.Interpreter\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for St4tic from the source code.
